@@ -1,0 +1,393 @@
+
+/* -------------------- Generico (Inicio) -------------------- */
+*{
+    /* se controla que los elementos no crezcan mas alla de la margen */
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -------------------- Generico (Fin) -------------------- */
+body{
+    /* el body siempre trae una margen, por eso se le quita */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: azure;
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+h4{
+    font-size: 1em;
+}
+p{
+    font-size: 1.25em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 1.2rem;
+    color: rgb(5, 105, 187);
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: rgb(5, 105, 187);
+}
+
+.btn i{
+    padding-left: 1rem;
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(64, 114, 155);
+    cursor: pointer;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(0, 119, 255);
+}
+
+button:hover{
+    background-color: rgb(30, 96, 177);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color_acento{
+    color:  rgb(5, 105, 187);
+}
+
+.color_acento2{
+    color:  rgb(3, 221, 148);
+}
+
+
+header{
+    background: rgb(5, 105, 187);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: aqua;
+    cursor: pointer;
+}
+header a:hover,
+header a:active{
+    color: yellow;
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("/imagenes/Hero_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 1em 3em;
+}
+
+#hero h1{
+    color: white;
+}
+
+#acercade .container{
+    text-align: center;
+    padding: 1em 1.5em;
+}
+
+#acercade p{
+    text-align: left;
+}
+
+#acercade .container_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+#acercade #link {
+    color: rgb(3, 221, 148);
+    margin: 0.5em 0.5em;
+}
+
+
+/* -------------------- Detalle Perfil (Inicio) -------------------- */
+#detalle_perfil .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 1.5em;
+}
+
+#detalle_perfil .info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    line-height: 2em;
+}
+
+#detalle_perfil .info p{
+    display: flex;
+    margin: 0;
+}
+#detalle_perfil .info a{
+    margin: 0.5em 2em;
+}
+
+.btn_download{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#detalle_perfil .cajas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    flex: content;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgb(5, 105, 187);
+    padding: 1em;
+    border-radius: 15px;
+}
+
+#detalle_perfil .box .count{
+    font-size: 1.5em;
+    color: yellow;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+#detalle_perfil .box h3{
+    font-size: 1.5em;
+    color: white;
+    margin: 0;
+}
+/* -------------------- Detalle Perfil (Fin) -------------------- */
+
+/* -------------------- Proyectos (Inicio) -------------------- */
+#proyectos {
+    background-color: rgb(10, 14, 32);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#proyectos .container{
+    padding: 150px 0px;
+}
+
+#proyectos h2{
+    margin-top: 0;
+}
+
+#proyectos p{
+    display: none;
+}
+
+#proyectos .poyecto{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5em;
+    margin: 3em;
+    border-radius: 20px;
+}
+
+.poyecto:first-child{
+    background-image:linear-gradient(0deg, 
+                                rgba(0, 0, 0, 0.8), 
+                                rgba(0, 0, 0, 0.5)),
+                                url("/imagenes/Banner_1.jpg");
+}
+
+.poyecto:nth-child(2){
+    background-image:linear-gradient(0deg, 
+                                rgba(0, 0, 0, 0.8), 
+                                rgba(0, 0, 0, 0.5)),
+                                url("/imagenes/Banner_2.jpg");
+}
+
+.poyecto:nth-child(3){
+    background-image:linear-gradient(0deg, 
+                                rgba(0, 0, 0, 0.8), 
+                                rgba(0, 0, 0, 0.5)),
+                                url("/imagenes/Banner_3.jpg");
+}
+
+.poyecto:nth-child(4){
+    background-image:linear-gradient(0deg, 
+                                rgba(0, 0, 0, 0.8), 
+                                rgba(0, 0, 0, 0.5)),
+                                url("/imagenes/Banner_4.png");
+}
+
+.poyecto:nth-child(5){
+    background-image:linear-gradient(0deg, 
+                                rgba(0, 0, 0, 0.8), 
+                                rgba(0, 0, 0, 0.5)),
+                                url("/imagenes/Banner_1.jpg");
+}
+
+.poyecto:nth-child(6){
+    background-image:linear-gradient(0deg, 
+                                rgba(0, 0, 0, 0.8), 
+                                rgba(0, 0, 0, 0.5)),
+                                url("/imagenes/Banner_2.jpg");
+}
+
+/* -------------------- Proyectos (Fin) -------------------- */
+
+/* -------------------- Habilidades (Inicio) -------------------- */
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1em;
+}
+
+#habilidades .container{
+    position: relative;
+    width: 100%;
+    background: rgba(5, 105, 187, 0.2);
+    padding: 0 20px;
+    border: solid 1px red;
+}
+
+.container_skill_1{
+    border: solid 1px red;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.container_skill_2{
+    border: solid 1px red;
+    margin-bottom: 1em;
+}
+
+#habilidades .skills{
+    margin: 20px 0;
+}
+
+#habilidades .skills p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#habilidades .progress{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+#habilidades .barra-cumplido{
+    background: rgb(5, 105, 187);
+}
+
+.container_skill_1 .skills:first-child .progress .barra-cumplido{
+    width:95%;
+}
+
+.container_skill_1 .skills:nth-child(2) .progress .barra-cumplido{
+    width:85%;  
+}
+
+.container_skill_1 .skills:nth-child(3) .progress .barra-cumplido{
+    width:95%;  
+}
+
+.container_skill_2 .skills:first-child .progress .barra-cumplido{
+    width:95%;
+}
+
+.container_skill_2 .skills:nth-child(2) .progress .barra-cumplido{
+    width:85%;  
+}
+
+.container_skill_2 .skills:nth-child(3) .progress .barra-cumplido{
+    width:95%;  
+}
+
+/* -------------------- Habilidades (Fin) -------------------- */
